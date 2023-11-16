@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons Iniciais de Kanto</title>
+    <link rel="stylesheet" href="static/estilo.css">
+</head>
+<body>
+    <div>
+        <h1>{{ Titulo }}</h1>
+    </div>
+
+    {%  for Pokemons in ListaPokemons %}
+
+    <div class="pokemon-card">
+        <h2>Nome: {{ Pokemons.nome }}</h2>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{Pokemons.numero}}.png">
+        <p>Número da pokedex: {{ Pokemons.numero }}</p>
+        <p>Tipo: {{ Pokemons.tipo }}</p>
+        <p>Altura: {{ Pokemons.altura }}m</p>
+        <p>peso: {{ Pokemons.peso }}kg</p>
+    </div>
+
+    {% endfor %}
+</body>
+</html>
