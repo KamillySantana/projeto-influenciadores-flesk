@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influenciadores Digitais</title>
+    <link rel="stylesheet" href="static/estilo.css">
+</head>
+<body>
+    <div>
+        <h1 class="titulo">{{ Titulo }}</h1>
+    </div>
+
+    {%  for forInflu in listaIn %}
+
+    <div class="pessoas">
+        <h2>Nome: {{ forInflu.nome }}</h2>
+        <img src="/static/img/{{ forInflu.nome }}.jpg">
+        <p>Plataformas Sociais: {{ forInflu.plataformas }}</p>
+        <p>Número de seguidores: {{ forInflu.seguidores }}</p>
+        <p>Áreas de Interesses: {{ forInflu.interesses }}</p>
+    </div>
+
+    {% endfor %}
+</body>
+</html>
+
+
