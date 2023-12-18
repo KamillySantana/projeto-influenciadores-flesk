@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ Titulo }}</title>
+    <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+{#====================================================#}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul id="messages" class="list-unstyled">
+            {% for message in messages %}
+                <li class="alert alert-success">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+{% endwith %}
+{#====================================================#}
+
+    <div>
+      <div>
+          <h1 class="titulo">{{ Titulo }}</h1>
+      </div>
+
+      <form class="tudo" action="/rotaInter" method="post">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="form-control">
+          </div>
+
+          <div>
+            <label for="plataformas">Plataformas Sociais:</label>
+            <input type="text" id="plataformas" name="plataformas" class="form-control">
+          </div>
+
+          <div>
+            <label for="seguidores">Número de Seguidores:</label>
+            <input type="number" id="seguidores" name="seguidores" class="form-control">
+          </div>
+
+           <div>
+            <label for="interesses">Áreas de interesse:</label>
+            <input type="text" id="interesses" name="interesses" class="form-control">
+          </div>
+
+          <button type="submit" name="salvar">Salvar</button>
+          <button type="submit" name="deslogar">Deslogar</button>
+      </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/*Cadstre-se*/
+/*Editar*/
+.tudo {
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.tudo label {
+    display: block;
+}
+
+.tudo input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tudo button{
+    background-color: #008dc0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+}
+
+/*Influenciadores*/
+.pessoas{
+    width: 200px;
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    display: inline-block;
+}
+
+.pessoas img {
+    max-width: 200px;
+}
+
+/*Inicio*/
+.inicio{
+    text-align: center;
+    background-color: #008dc0;
+    color: white;
+    padding: 20px;
+}
+
+.links a{
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+}
